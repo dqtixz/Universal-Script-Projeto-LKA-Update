@@ -1,4 +1,6 @@
 -- Troll Face Fake Light LOL Man What You did Copy me script? ---
+                        -- Projeto LKA ---
+                         -- Scripts --
 
 local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
 local window = PabloLib:Create(
