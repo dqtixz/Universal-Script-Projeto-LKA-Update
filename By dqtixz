@@ -13,6 +13,10 @@ local tab3 = window:CreateTab("UI")
 
 -- Jogos Com Letra A ---
 
+tab1:CreateInfo("Created By dqtixz")
+tab2:CreateInfo("Change You Speed And Jump !")
+tab3:CreateWarning("https://scriptblox.com/u/dqtixz")
+
 tab1:CreateButton("Arsenal Tbao Hub", function()
 print(value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/ArsenalTbaoHubNew"))()
