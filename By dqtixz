@@ -1,0 +1,254 @@
+-- Troll Face Fake Light LOL Man What You did Copy me script? ---
+
+local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
+local window = PabloLib:Create(
+"Projeto LKA I Universal  📌", -- Name here.
+"Enabled", -- If you want draggable set here to "Enabled" if you dont want set to "Disabled".
+"p" -- You can put any keybind here to open close.
+)
+
+local tab1 = window:CreateTab("Games")
+local tab2 = window:CreateTab("Player")
+local tab2 = window:CreateTab("UI")
+
+-- Jogos Com Letra A ---
+
+tab1:CreateButton("Arsenal Tbao Hub", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/ArsenalTbaoHubNew"))()
+end)
+
+tab1:CreateButton("Blox Fruits", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubBloxFruit"))()
+end)
+
+tab1:CreateButton("Blox Fruits 2 Lag, key", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hashiishxxxx/HyHub/main/loader"))()
+end)
+
+tab1:CreateButton("Blox Fruits 3", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zenhubtop/zen_hub_pr/main/zennewwwwui.lua", true))()
+end)
+
+tab1:CreateButton("Blade Ball 1", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/123coconut123/BladeBall/main/Script"))()
+end)
+
+tab1:CreateButton("Blade Ball 2", function()
+print(value)
+_G.drop = true -- true/false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/Blade%20Ball%20%5BDrop%20Farm%5D"))()
+end)
+
+tab1:CreateButton("Blade Ball 3 (key, hub)", function()
+print(value)
+loadstring(game:HttpGet('https://zaphub.xyz/Exec'))()
+end)
+
+tab1:CreateButton("Prison Life Admin", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/Tigeradmin"))()
+end)
+
+tab1:CreateButton("Prison Life Hub Tbao", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife"))()
+end)
+
+tab1:CreateButton("Murder Mystery 2 Hub Tbao", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubMurderMystery2"))() 
+end)
+
+tab1:CreateButton("Murder Mystery 2 Coin Farm Key", function()
+print(value)
+loadstring(game:HttpGet("https://github.com/Hiklom/hikka/blob/main/Murder%20Mystery%202.lua"))()
+end)
+
+tab1:CreateButton("Murderers Vs Sherrife 1", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Deni210/murdersvssherrifsduels/main/rubyhub", true))()
+end)
+
+tab1:CreateButton("Murderers Vs Sherrife 2", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubMurdervssheriff"))()
+end)
+
+tab1:CreateButton("Ninja Legends OP Chi farm", function()
+print(value)
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/TYpU89g4", true))()
+library.options.underlinecolor = "rainbow"
+
+local main = library:CreateWindow('Farms')
+
+local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+
+--- Gets child from character
+-- @treturn Part or nil
+local function GetFromCharacter(Name)
+  local Character = Player.Character or Player.CharacterAdded:Wait()
+  local Part = Character:FindFirstChild(Name) or Character:WaitForChild(Name, 10)
+
+  return Part
+end
+
+--- Touch 👀
+local function Touch(Parent, ChildName)
+  local TouchPart = Parent:FindFirstChild(ChildName)
+
+  if TouchPart then
+    local HumanoidRootPart = GetFromCharacter("HumanoidRootPart")
+    if not HumanoidRootPart then return end
+    if firetouchinterest then
+      firetouchinterest(HumanoidRootPart, TouchPart, 0)
+      firetouchinterest(HumanoidRootPart, TouchPart, 1)
+    else
+      TouchPart.CFrame = HumanoidRootPart.CFrame
+    end
+  end
+end
+
+--- It'll get something
+local function CollectOpStuff()
+  local Parts = workspace.Hoops:GetChildren()
+
+  for _, v in ipairs(Parts) do
+    if not v:FindFirstChild("Cooldown") then
+      Touch(v, "touchPart")
+    end
+  end
+end
+
+--- Toggleeee pp
+local function ToggleGUI(To)
+  local Guis = {Player.PlayerGui.statEffectsGui, Player.PlayerGui.hoopGui}
+
+  for _, v in ipairs(Guis) do
+    if v.Enabled ~= To then
+      v.Enabled = not v.Enabled
+    end
+  end
+end
+
+ToggleGUI(false)
+
+main:Toggle("Auto Chest", {flag = "AutoChest"}, function(toggle)
+  if _G.Swing then _G.Swing:Disconnect() end
+  local Chests = {"goldenChest","enchantedChest","magmaChest","mythicalChest","legendsChest"}
+
+  if toggle then
+    _G.Swing = RunService.Heartbeat:Connect(function()
+      for _, v in ipairs(Chests) do
+        local Chest = workspace:FindFirstChild(v)
+
+        if Chest then
+          Touch(Chest, "circleInner")
+        end
+      end
+    end)
+  end
+end)
+
+main:Toggle("Op Chi Farm", {flag = "OpFarm"}, function(toggle)
+  if _G.CollectorOP then _G.CollectorOP:Disconnect() end
+
+  if toggle then
+    _G.CollectorOP = RunService.Heartbeat:Connect(CollectOpStuff)
+  end
+end)
+end)
+
+tab1:CreateButton("Ninja Legends Proxima Hub", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua", true))()
+end)
+
+tab1:CreateButton("Egg Tree Incremental Auto Collet", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/Egg%20Tree%20Incremental"))()
+end)
+
+tab1:CreateButton("Criminality (Rare)", function()
+print(value)
+loadstring(game:HttpGet("https://hideout.one/api/cdn/loader"))()
+end)
+
+tab1:CreateButton("Zombie Attack (Rare New)", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dqtixz/Zombie-attack-New/main/Script%20by%20dqtixz%20full%20OP"))();
+end)
+
+tab1:CreateButton("Area 51", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Saktk-In-Area51/main/Area51", true))()
+end)
+
+tab1:CreateButton("Universal Cheat", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Next1x/Nextix./main/UniversalACBypass"))()
+end)
+
+tab1:CreateButton("Bedwars Gui", function()
+print(value)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/illyamarj/HUB/main/Bed%20Wars'))()
+end)
+
+tab1:CreateButton("🎁 XMAS 2023 | Funky Friday", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/RandomScript/main/FunkyFridayMobile"))()
+end)
+
+tab1:CreateButton("The Normal Elevator", function()
+print(value)
+loadstring(game:HttpGet("https://pastebin.com/raw/PwAgvJL9"))()
+end)
+
+tab1:CreateButton("Zombie Uprising", function()
+print(value)
+loadstring(game:HttpGet("https://pastebin.com/raw/0N1y7RyM"))() 
+end)
+
+tab1:CreateButton("Build Boat", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ProBaconHub/ProBaconGUI/main/-ProBaconGuiLoader", true))()
+end)
+
+tab1:CreateButton("Ride a Box Down a Slide", function()
+print(value)
+getgenv().rbds = {
+	Autofarm = true
+}
+loadstring(game:HttpGet("https://pastebin.com/raw/Cmm23T9g"))()
+end)
+
+tab1:CreateButton("OP Battlegrounds", function()
+print(value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/G0it2no/Script/main/Op%20bg"))()
+end)
+
+tab1:CreateButton("Drill 2.0 Bathroom Attack", function()
+print(value)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraScript/Script/main/BathroomAttack'))()
+end)
+
+tab2:CreateTextbox("Change your Speed", function(a)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = a
+print(a)
+end)
+
+tab2:CreateTextbox("Change your Jumppower", function(a)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = a
+print(a)
+end)
+
+tab3:CreateButton("Close UI", function()
+print(value)
+PabloLib:Close()
+end)
