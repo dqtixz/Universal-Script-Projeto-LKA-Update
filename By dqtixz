@@ -9,7 +9,7 @@ local window = PabloLib:Create(
 
 local tab1 = window:CreateTab("Games")
 local tab2 = window:CreateTab("Player")
-local tab2 = window:CreateTab("UI")
+local tab3 = window:CreateTab("UI")
 
 -- Jogos Com Letra A ---
 
